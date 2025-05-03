@@ -1,4 +1,4 @@
-# 👨‍💻 My Portfolio (React)
+# 👨‍💻 My Portfolio
 
 A personal portfolio website built with **React.js** to showcase my projects, skills, certifications, experience, and resume. The application is responsive, fast, and modern—designed to make a strong professional impression.
 
