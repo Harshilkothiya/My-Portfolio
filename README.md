@@ -50,8 +50,8 @@ npm install
 npm start
 ```
 
-🙋‍♂️ Author
-Harshil Kothiya
+## 👨‍💻 Authors
+- **Harshil Kothiya**  
 -🔗 Portfolio: harshilkothiya.onrender.com
 -💼 LinkedIn: Harshil Kothiya
 -🐙 GitHub: @Harshilkothiya
