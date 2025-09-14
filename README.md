@@ -52,6 +52,6 @@ npm start
 
 🙋‍♂️ Author
 Harshil Kothiya
-🔗 Portfolio: harshilkothiya.onrender.com
-💼 LinkedIn: Harshil Kothiya
-🐙 GitHub: @Harshilkothiya
+-🔗 Portfolio: harshilkothiya.onrender.com
+-💼 LinkedIn: Harshil Kothiya
+-🐙 GitHub: @Harshilkothiya
