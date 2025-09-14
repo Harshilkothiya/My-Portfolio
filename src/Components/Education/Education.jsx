@@ -3,7 +3,7 @@ import "./Education.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import cspit from "../../assets/cspit.jpeg";
+import cspit from "../../assets/cspit.jpg";
 import ssgv from "../../assets/ssgv.jpeg"; // Assuming you need this image
 
 function Education() {
@@ -23,7 +23,7 @@ function Education() {
 
         <div className="box-container">
           <div data-aos="fade-down" className="box">
-            <div data-aos="fade-down" className="image">
+            <div className="image">
               <img draggable="false" src={cspit} alt="cspit"/>
             </div>
             <div className="content">

@@ -7,16 +7,23 @@ import farm from "../../assets/farm.png"
 import ipl from "../../assets/ipl.png"
 import hotel1 from "../../assets/hotel1.png"
 import bangalore from "../../assets/home.png"
+import smartdoc from "../../assets/smartdoc.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import realestet from "../../assets/real_estet.png";
 import { faCheckToSlot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
+  {
+    image:smartdoc,
+    description:
+      "AI chatbot for document Q&A with memory-powered multi-turn conversations.",
+    link: "https://github.com/Harshilkothiya/SmartDocs-AI?tab=readme-ov-file",
+    title: "SmartDocs-AI",
+  },
   {
     image:rul,
     description:

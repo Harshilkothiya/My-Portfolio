@@ -45,8 +45,8 @@ function About() {
             <img draggable="false" class="tilt" src={about} alt="" />
           </div>
           <div class="content">
-            <h3 data-aos="fade-down">I'm Harshil Kothiya</h3>
-            <span data-aos="fade-down" class="tag">
+            <h3>I'm Harshil Kothiya</h3>
+            <span data-aos="zoom-in" class="tag">
               Data Scientist
             </span>
             <p data-aos="fade-down">
@@ -62,7 +62,7 @@ function About() {
               data science.
             </p>
 
-            <div data-aos="fade-down" className="box-container">
+            <div  className="box-container">
                 <div className="box">
                     <p>
                         <span>Age:</span>

@@ -181,7 +181,7 @@ function Skills() {
                 </h2>
                 <div className="stats-layout">
                     {/* LeetCode Card */}
-                    <div className="platform-card">
+                    <div className="platform-card" data-aos="flip-left">
                         {loading && <div className="loading-overlay">Loading...</div>}
                         <div className="stat-icon small-icon">
                             <img src={leetcode} alt="LeetCode" />
@@ -212,7 +212,7 @@ function Skills() {
                     </div>
 
                     {/* CodeChef Card */}
-                    <div className="platform-card">
+                    <div className="platform-card " data-aos="flip-up">
                         {loading && <div className="loading-overlay">Loading...</div>}
                         <div className="stat-icon small-icon">
                             <img src={codechef} alt="CodeChef" />
@@ -240,7 +240,7 @@ function Skills() {
                     </div>
 
                     {/* GFG Card */}
-                    <div className="platform-card">
+                    <div className="platform-card" data-aos="flip-right">
                         {loading && <div className="loading-overlay">Loading...</div>}
                         <div className="stat-icon small-icon">
                             <img src={gfg} alt="GeeksforGeeks" />
