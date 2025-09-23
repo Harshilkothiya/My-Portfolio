@@ -3,7 +3,7 @@ import AOS from "aos";
 import "./About.css";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import about from "../../assets/about.jpg";
+import about from "../../assets/about.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
