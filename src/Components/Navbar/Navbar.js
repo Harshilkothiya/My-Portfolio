@@ -6,8 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
 import "./Navbar.css";
-import Typed from "typed.js"
-import mine from "../../assets/mine.png";
+import Typed from "typed.js";
 // import ParticlesComponent from "../Particles/Particles";
 // import mine1 from "../../assets/mine1.jpg";
 
