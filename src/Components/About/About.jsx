@@ -7,6 +7,8 @@ import about from "../../assets/about.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+// about page
+
 function About() {
   const handleResumeClick = () => {
     const resumeUrl = "/resume.pdf"; // Resume file in 'public/' folder
