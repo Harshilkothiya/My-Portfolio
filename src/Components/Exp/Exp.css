@@ -1,0 +1,128 @@
+.experience-section {
+  background-color: var(--bg-secondary);
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.experience-group-title {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 10px;
+}
+
+.mt-top {
+  margin-top: 20px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  border-left: 2px solid var(--border-light);
+  padding-left: 30px;
+  margin-left: 10px;
+}
+
+.experience-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  left: -37px;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  border: 2px solid var(--bg-secondary);
+}
+
+.competition-card::before {
+  background-color: var(--accent-secondary);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.experience-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience-role {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.experience-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  background-color: var(--bg-secondary);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.experience-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--bg-secondary);
+  color: var(--accent-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid var(--border-light);
+}
+
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

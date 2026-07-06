@@ -1,0 +1,38 @@
+/* Main container */
+.experience {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Timeline line */
+.experience .timeline::after {
+  background: linear-gradient(to bottom, #2506ad, #6b2cf5);
+  box-shadow: 0 0 20px rgba(37, 6, 173, 0.3);
+}
+
+/* Content cards */
+.experience .content {
+  background: linear-gradient(135deg, #2506ad 0%, #6b2cf5 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(37, 6, 173, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.experience .content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(37, 6, 173, 0.3);
+}
+
+/* Timeline dots */
+.experience .container::after {
+  box-shadow: 0 0 15px rgba(37, 6, 173, 0.3);
+  transition: all 0.3s ease;
+}
+
+.experience .container:hover::after {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(37, 6, 173, 0.5);
+} 

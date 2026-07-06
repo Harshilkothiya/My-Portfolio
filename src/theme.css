@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Base */
+  --bg-primary: #FAFAF8;        /* warm off-white, not pure white */
+  --bg-secondary: #F2F1ED;      /* section alternation */
+  --bg-card: #FFFFFF;
+
+  /* Text */
+  --text-primary: #1A1A2E;      /* near-black navy, not pure black */
+  --text-secondary: #5A5A6E;
+  --text-muted: #8A8A9A;
+
+  /* Accent — AI/tech feel */
+  --accent-primary: #4F46E5;    /* indigo */
+  --accent-secondary: #3730A3;  /* dark indigo (hover) */
+  --accent-warm: #F59E0B;       /* amber, used sparingly for CTAs */
+
+  /* Borders / dividers */
+  --border-light: #E5E4E0;
+
+  /* Shadows — soft, not heavy */
+  --shadow-sm: 0 1px 3px rgba(26,26,46,0.06);
+  --shadow-md: 0 4px 16px rgba(26,26,46,0.08);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* Global Section Header Theme */
+.global-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.global-section-title span {
+  color: var(--accent-primary);
+}
+
+.global-section-title svg {
+  color: var(--accent-primary);
+}
+
+code, .tech-tag, .skill-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+/* Base utility classes for motion / UI */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

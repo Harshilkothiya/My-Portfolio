@@ -1,0 +1,17 @@
+:root {
+  --navy-blue: #1a1b4b;
+  --bright-purple: #4512bd;
+  --hover-purple: #3a0ca3;
+  --deep-purple: #2E1760;
+  --yellow-accent: #FFD700;
+  --card-bg: #0A0A1F;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Optional: Add some padding for sections */
+  section {
+    padding: 80px 10%;
+  }

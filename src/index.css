@@ -1,0 +1,6 @@
+@import './theme.css';
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
