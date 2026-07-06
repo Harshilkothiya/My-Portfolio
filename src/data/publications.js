@@ -1,4 +1,4 @@
-const paper = "/certificates/paper.jpg";
+import paper from "../assets/certificates/paper.jpg";
 
 export const publications = [
   {

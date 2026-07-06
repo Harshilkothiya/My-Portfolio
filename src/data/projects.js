@@ -6,8 +6,7 @@ import ipl from "../assets/ipl.webp";
 import hotel1 from "../assets/hotel1.webp";
 import bangalore from "../assets/home.webp";
 import smartdoc from "../assets/smartdoc.webp";
-
-const sars = "/aggri2.png";
+import sars from "../assets/aggri2.png";
 
 export const projects = [
   {

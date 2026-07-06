@@ -3,15 +3,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, User } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./About.css";
-import about from '../../assets/about.webp';
+import { heroContent } from "../../data/profile";
 import { skills } from "../../data/skills";
 
 function About() {
   const handleResumeClick = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open(heroContent.resumeUrl, "_blank", "noopener,noreferrer");
   };
 
-  // Flatten all skills for the marquee
   const allSkills = Object.values(skills).flat();
 
   return (
@@ -24,27 +23,24 @@ function About() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="badge">AI / ML Engineer</div>
+          <div className="badge">{heroContent.title}</div>
           <h1 className="hero-title">
-            Hello, I'm <span>Harshil Kothiya</span>
+            Hello, I'm <span>{heroContent.name}</span>
           </h1>
-          <p className="hero-subtitle">
-            I engineer intelligent systems, build memory-powered RAG pipelines, and deploy scalable machine learning solutions to solve real-world problems.
-          </p>
+          <p className="hero-subtitle">{heroContent.tagline}</p>
           <div className="hero-actions">
-            <button className="btn primary-btn" onClick={handleResumeClick} aria-label="View Resume">
-              <User size={18} /> View Resume
+            <button className="btn primary-btn" onClick={handleResumeClick} aria-label={heroContent.ctaLabel}>
+              <User size={18} /> {heroContent.ctaLabel}
             </button>
-            <a href="#project" className="btn secondary-btn" aria-label="View Work">
-              View Work <ArrowRight size={18} />
+            <a href="#project" className="btn secondary-btn" aria-label={heroContent.secondaryCtaLabel}>
+              {heroContent.secondaryCtaLabel} <ArrowRight size={18} />
             </a>
             <div className="social-links-hero">
-              <a href="https://github.com/Harshilkothiya" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
-                <FaGithub size={22} />
-              </a>
-              <a href="https://www.linkedin.com/in/harshil-kothiya/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
-                <FaLinkedin size={22} />
-              </a>
+              {heroContent.socialLinks.map((link) => (
+                <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label={link.label}>
+                  {link.label === "GitHub" ? <FaGithub size={22} /> : <FaLinkedin size={22} />}
+                </a>
+              ))}
             </div>
           </div>
         </motion.div>
@@ -57,7 +53,7 @@ function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="image-wrapper">
-            <img src={about} alt="Harshil Kothiya" className="about-image" />
+            <img src={heroContent.image} alt={heroContent.imageAlt} className="about-image" />
             <div className="glow-effect"></div>
           </div>
         </motion.div>

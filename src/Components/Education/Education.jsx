@@ -2,28 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, MapPin, Calendar, BookOpen } from "lucide-react";
 import "./Education.css";
-import cu from "../../assets/cspit.webp";
-import ssgv from "../../assets/ssgv.webp";
+import { education } from "../../data/education";
 
 function Education() {
-  const educations = [
-    {
-      degree: "B.Tech in Information Technology",
-      institution: "Charotar University of Science and Technology",
-      date: "2022 -2026",
-      location: "Anand, Gujarat",
-      image: cu,
-      status: "Completed"
-    },
-    {
-      degree: "HSC Science | Informatics Practices",
-      institution: "Shree Swaminarayan Gurukul, Surat | GSEB",
-      date: "2020 - 2022",
-      location: "Surat, Gujarat",
-      image: ssgv,
-      status: "Completed"
-    }
-  ];
+  const educations = education;
 
   return (
     <section className="education-section" id="education" aria-label="Education">

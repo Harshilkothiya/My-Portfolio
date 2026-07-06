@@ -1,17 +1,16 @@
 :root {
-  --navy-blue: #1a1b4b;
-  --bright-purple: #4512bd;
-  --hover-purple: #3a0ca3;
-  --deep-purple: #2E1760;
-  --yellow-accent: #FFD700;
-  --card-bg: #0A0A1F;
+  --navy-blue: #4F46E5;
+  --bright-purple: #4F46E5;
+  --hover-purple: #3730A3;
+  --deep-purple: #312E81;
+  --yellow-accent: #F59E0B;
+  --card-bg: #FFFFFF;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Optional: Add some padding for sections */
-  section {
-    padding: 80px 10%;
-  }
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 10%;
+}

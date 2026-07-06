@@ -1,35 +1,37 @@
 # AI/ML Engineer Portfolio
 
-A modern, fast, and responsive portfolio designed for an AI/ML Engineer. Rebuilt from the ground up using **React**, **Vite**, and **Framer Motion**, focusing on a clean light theme and data-driven component architecture.
+This portfolio showcases an AI/ML engineer’s work through a light, technical, and production-friendly React experience. It is built with Vite, Framer Motion, and a data-driven component structure so content updates stay simple and maintainable.
+
+## Highlights
+
+- Clean light theme with accessible contrast and subtle motion
+- Project, experience, publication, certification, and skill content separated into data files
+- Responsive sections for hero, experience, projects, publications, certifications, skills, education, and contact
+- Optimized asset pipeline for fast loading and a polished presentation
 
 ## Tech Stack
 
-- **Framework**: React (Bootstrapped with Vite for instant server start and lightning-fast HMR)
-- **Styling**: Vanilla CSS (Global tokens, component-level scoping)
-- **Animations**: Framer Motion (Optimized for `prefers-reduced-motion`)
-- **Icons**: Lucide React
-- **Asset Optimization**: WebP image conversion for performance
+- React + Vite
+- Framer Motion for motion
+- Lucide React and React Icons for icons
+- Vanilla CSS with shared theme tokens
 
-## Architecture
+## Project Structure
 
-This portfolio separates content from presentation:
-- **`src/data/`**: Contains all textual and link data (Projects, Experience, Skills, Publications, Certifications)
-- **`src/Components/`**: Reusable React components that map over the data schemas
+- src/data for content-driven portfolio data
+- src/Components for section components
+- src/assets for images and certificate assets
 
-This architecture ensures that updating the portfolio content (like adding a new project or certification) requires zero component logic changes.
+## Run Locally
 
-## Running Locally
+```bash
+npm install
+npm run dev
+```
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite dev server:
-   ```bash
-   npm run dev
-   ```
+## Build
 
-## Design Decisions
-- **AI/ML Focus**: The entire design language, from the typography (`JetBrains Mono` for tech tags, `Sora` for headings) to the project schemas (tech-stack arrays, live demos), is engineered to appeal to technical reviewers looking for AI/ML talent.
-- **Performance**: Swapped CRA for Vite, stripped out heavy animation libraries, and replaced CDN-based Flaticons with bundled SVGs via Lucide React. Lighthouse scores are optimized.
+```bash
+npm run build
+```
+

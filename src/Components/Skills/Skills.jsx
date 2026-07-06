@@ -6,7 +6,7 @@ import {
   SiExpress, SiLangchain
 } from "react-icons/si";
 import { 
-  FaPython, FaJava, FaNetworkWired, FaBrain, FaChartBar, 
+  FaPythongit, FaNetworkWired, FaBrain, FaChartBar, 
   FaGithub, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaDocker, FaDatabase 
 } from "react-icons/fa";
 import "./Skills.css";
@@ -34,6 +34,7 @@ function Skills() {
     { name: "LangChain", icon: SiLangchain, color: "#121212" },
     { name: "Qdrant", icon: FaDatabase, color: "#ff4b4b" },
     { name: "Docker", icon: FaDocker, color: "#2496ED" },
+    { name: "Express", icon: SiExpress, color: "#000000" }
   ];
 
   return (

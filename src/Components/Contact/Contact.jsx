@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { Headset, Mail, Phone, MapPin } from "lucide-react";
+import { Headset, Mail, MapPin } from "lucide-react";
+import { contactDetails } from "../../data/profile";
 import "./Contact.css";
 
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -41,7 +42,6 @@ function Contact() {
       });
       formRef.current.reset();
     } catch (error) {
-      console.error("EmailJS error:", error);
       setStatus({
         type: "error",
         message: "Something went wrong while sending your message. Please reach out directly via email.",
@@ -72,8 +72,8 @@ function Contact() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
         >
-          <h3>Let's talk about everything!</h3>
-          <p>Don't like forms? Send me an email. 👋</p>
+          <h3>{contactDetails.heading}</h3>
+          <p>{contactDetails.description}</p>
           
           <div className="info-item">
             <Mail className="info-icon" />
@@ -87,7 +87,7 @@ function Contact() {
             <MapPin className="info-icon" />
             <div>
               <h4>Location</h4>
-              <p>Surat, Gujarat, India</p>
+              <p>{contactDetails.location}</p>
             </div>
           </div>
         </motion.div>
