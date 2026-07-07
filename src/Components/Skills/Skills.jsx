@@ -6,7 +6,7 @@ import {
   SiExpress, SiLangchain
 } from "react-icons/si";
 import { 
-  FaPythongit, FaNetworkWired, FaBrain, FaChartBar, 
+  FaPython, FaNetworkWired, FaBrain, FaChartBar, 
   FaGithub, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaDocker, FaDatabase 
 } from "react-icons/fa";
 import "./Skills.css";
