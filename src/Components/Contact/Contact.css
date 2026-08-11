@@ -118,3 +118,17 @@
     padding: 25px;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 15px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .info-item {
+    gap: 15px;
+  }
+}

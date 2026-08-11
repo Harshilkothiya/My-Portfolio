@@ -189,6 +189,10 @@
   .about-image {
     max-width: 280px;
   }
+  
+  .about-container {
+    padding: 0 5%;
+  }
 }
 
 /* Infinite Tech Stack Marquee */
@@ -253,4 +257,31 @@
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .social-links-hero {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
 }

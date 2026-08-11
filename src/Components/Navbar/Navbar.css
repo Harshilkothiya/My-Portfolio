@@ -4,17 +4,15 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: transparent;
+  background-color: var(--bg-card);
   transition: all 0.3s ease;
   padding: 20px 10%;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
   box-shadow: var(--shadow-sm);
   padding: 15px 10%;
-  border-bottom: 1px solid var(--border-light);
 }
 
 .navbar-container {
@@ -77,6 +75,14 @@
 }
 
 @media (max-width: 900px) {
+  .header {
+    padding: 15px 5%;
+  }
+
+  .header.scrolled {
+    padding: 10px 5%;
+  }
+
   .menu-icon {
     display: block;
   }

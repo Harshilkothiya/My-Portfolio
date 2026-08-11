@@ -14,3 +14,15 @@ html {
 section {
   padding: 80px 10%;
 }
+
+@media (max-width: 900px) {
+  section {
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+}

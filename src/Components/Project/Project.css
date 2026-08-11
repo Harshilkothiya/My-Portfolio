@@ -119,3 +119,26 @@
 .project-link:hover {
   color: var(--accent-primary);
 }
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .project-image-wrapper {
+    height: 180px;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.15rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+}

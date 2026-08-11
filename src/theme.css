@@ -24,6 +24,10 @@
   --shadow-md: 0 4px 16px rgba(26,26,46,0.08);
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -45,12 +49,20 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--text-primary);
   margin: 0 0 40px 0;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .global-section-title {
+    font-size: 1.6rem;
+    gap: 8px;
+  }
 }
 
 .global-section-title span {
